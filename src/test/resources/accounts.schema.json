@@ -29,12 +29,12 @@
         "default": 0
       },
       "currency": {
-        "type": "string",
-        "required": ["RUB"],
-        "required": ["USD"]
-        }
-      },
-    "unevaluatedProperties": false
+        "properties": {
+          "currency name": { "enum": ["RUB", "USD"]}
+        },
+        "required": ["type"],
+        "additionalProperties": false
+      }
     }
   }
 }
